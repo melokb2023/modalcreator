@@ -1,0 +1,7 @@
+{
+  "name": "modalcreator",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
