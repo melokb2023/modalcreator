@@ -1,20 +1,16 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title>mymodal</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class = "ion-padding">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">mymodal</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-button (click)= "openModal()" expand="full" >Transparent Modal</ion-button>
+  <ion-button (click)= "openTransparentModal()" expand="full" color="secondary">Transparent Modal</ion-button>
+  <ion-button (click)= "popOverModal($event)" expand="full" color="tertiary">Popover Modal</ion-button>
 </ion-content>

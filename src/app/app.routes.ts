@@ -10,4 +10,12 @@ export const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full',
   },
+  {
+    path: 'mymodal',
+    loadComponent: () => import('./mymodal/mymodal.page').then( m => m.MymodalPage)
+  },
+  {
+    path: 'mypopover',
+    loadComponent: () => import('./mypopover/mypopover.page').then( m => m.MypopoverPage)
+  },
 ];
